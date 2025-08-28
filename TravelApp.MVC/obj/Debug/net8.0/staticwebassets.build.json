@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "mkdEnsyeMas5R29oGHppoKWyynlltah5/PDraeiSQbM=",
+  "Source": "TravelApp.MVC",
+  "BasePath": "_content/TravelApp.MVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TravelApp.MVC\\wwwroot",
+      "Source": "TravelApp.MVC",
+      "ContentRoot": "F:\\project\\TravelApp.MVC\\wwwroot\\",
+      "BasePath": "_content/TravelApp.MVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\project\\TravelApp.MVC\\wwwroot\\css\\site.css",
+      "SourceId": "TravelApp.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\project\\TravelApp.MVC\\wwwroot\\",
+      "BasePath": "_content/TravelApp.MVC",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "912zh41goc",
+      "Integrity": "DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/site.912zh41goc.css",
+      "AssetFile": "F:\\project\\TravelApp.MVC\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 28 Aug 2025 23:22:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "912zh41goc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "F:\\project\\TravelApp.MVC\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 28 Aug 2025 23:22:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w="
+        }
+      ]
+    }
+  ]
+}

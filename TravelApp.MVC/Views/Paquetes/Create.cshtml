@@ -1,0 +1,170 @@
+@model TravelApp.MVC.Models.Paquete
+
+@{
+    ViewData["Title"] = "Nuevo Paquete";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0"><i class="fas fa-box me-2"></i>Enviar Paquete</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">Información del Remitente</h5>
+                            <div class="mb-3">
+                                <label asp-for="NombreRemitente" class="form-label"></label>
+                                <input asp-for="NombreRemitente" class="form-control" placeholder="Nombre del remitente" />
+                                <span asp-validation-for="NombreRemitente" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="ApellidoRemitente" class="form-label"></label>
+                                <input asp-for="ApellidoRemitente" class="form-control" placeholder="Apellido del remitente" />
+                                <span asp-validation-for="ApellidoRemitente" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="CorreoRemitente" class="form-label"></label>
+                                <input asp-for="CorreoRemitente" class="form-control" placeholder="correo@ejemplo.com" />
+                                <span asp-validation-for="CorreoRemitente" class="text-danger"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h5 class="text-success mb-3">Información del Destinatario</h5>
+                            <div class="mb-3">
+                                <label asp-for="NombreDestinatario" class="form-label"></label>
+                                <input asp-for="NombreDestinatario" class="form-control" placeholder="Nombre del destinatario" />
+                                <span asp-validation-for="NombreDestinatario" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="ApellidoDestinatario" class="form-label"></label>
+                                <input asp-for="ApellidoDestinatario" class="form-control" placeholder="Apellido del destinatario" />
+                                <span asp-validation-for="ApellidoDestinatario" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h5 class="text-info mb-3">Información del Envío</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Origen" class="form-label"></label>
+                            <select asp-for="Origen" class="form-select">
+                                <option value="">Seleccione origen</option>
+                                @if (ViewBag.Ciudades != null)
+                                {
+                                    @foreach (var ciudad in (List<TravelApp.MVC.Models.Ciudad>)ViewBag.Ciudades)
+                                    {
+                                        <option value="@ciudad.Nombre">@ciudad.Nombre</option>
+                                    }
+                                }
+                            </select>
+                            <span asp-validation-for="Origen" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Destino" class="form-label"></label>
+                            <select asp-for="Destino" class="form-select">
+                                <option value="">Seleccione destino</option>
+                                @if (ViewBag.Ciudades != null)
+                                {
+                                    @foreach (var ciudad in (List<TravelApp.MVC.Models.Ciudad>)ViewBag.Ciudades)
+                                    {
+                                        <option value="@ciudad.Nombre">@ciudad.Nombre</option>
+                                    }
+                                }
+                            </select>
+                            <span asp-validation-for="Destino" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Peso" class="form-label"></label>
+                            <input asp-for="Peso" class="form-control" type="number" step="0.1" min="0.1" max="50" placeholder="0.0" />
+                            <span asp-validation-for="Peso" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="FechaEnvio" class="form-label"></label>
+                            <input asp-for="FechaEnvio" class="form-control" type="date" />
+                            <span asp-validation-for="FechaEnvio" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Estado" class="form-label"></label>
+                            <select asp-for="Estado" class="form-select">
+                                <option value="Pendiente">Pendiente</option>
+                                <option value="En Tránsito">En Tránsito</option>
+                                <option value="Entregado">Entregado</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Descripcion" class="form-label"></label>
+                        <textarea asp-for="Descripcion" class="form-control" rows="3" placeholder="Descripción del contenido del paquete"></textarea>
+                        <span asp-validation-for="Descripcion" class="text-danger"></span>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Precio por kg:</strong> $25.00 MXN
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Index" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-arrow-left me-1"></i>Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-shipping-fast me-1"></i>Enviar Paquete
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        // Calcular costo total en tiempo real
+        const pesoInput = document.querySelector('[name="Peso"]');
+        if (pesoInput) {
+            pesoInput.addEventListener('input', function() {
+                const peso = parseFloat(this.value) || 0;
+                const total = peso * 25;
+                
+                let totalElement = document.querySelector('#total-cost');
+                if (!totalElement) {
+                    totalElement = document.createElement('div');
+                    totalElement.id = 'total-cost';
+                    totalElement.className = 'alert alert-success mt-2';
+                    this.parentNode.appendChild(totalElement);
+                }
+                
+                if (peso > 0) {
+                    totalElement.innerHTML = `<i class="fas fa-calculator me-2"></i><strong>Costo Total: $${total.toFixed(2)} MXN</strong>`;
+                    totalElement.style.display = 'block';
+                } else {
+                    totalElement.style.display = 'none';
+                }
+            });
+        }
+
+        // Validar que origen y destino sean diferentes
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const origen = document.querySelector('[name="Origen"]').value;
+            const destino = document.querySelector('[name="Destino"]').value;
+            
+            if (origen === destino && origen !== '') {
+                e.preventDefault();
+                alert('El origen y destino no pueden ser iguales');
+            }
+        });
+    </script>
+}

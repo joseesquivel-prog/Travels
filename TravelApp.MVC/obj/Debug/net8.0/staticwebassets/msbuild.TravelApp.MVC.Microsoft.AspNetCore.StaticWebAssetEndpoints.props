@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/TravelApp.MVC/css/site.912zh41goc.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"912zh41goc"},{"Name":"integrity","Value":"sha256-DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w="},{"Name":"label","Value":"_content/TravelApp.MVC/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1701"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 23:22:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TravelApp.MVC/css/site.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1701"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 23:22:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

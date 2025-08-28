@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "TravelApp.API\\TravelApp.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TravelApp.MVC\\TravelApp.MVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
