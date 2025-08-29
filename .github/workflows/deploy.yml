@@ -3,39 +3,26 @@ name: Deploy to Windows Server
 on:
   push:
     branches:
-      - main  # El flujo de trabajo se ejecutará cuando se haga push a la rama 'main'
+      - main  # Se ejecuta al hacer push en la rama main
 
 jobs:
   deploy:
-    runs-on: windows-latest  # Ejecutar el trabajo en un entorno de Windows
+    runs-on: windows-latest  # Ejecutamos en un entorno Windows
 
     steps:
       - name: Check out the code
         uses: actions/checkout@v2  # Este paso toma el código de tu repositorio
 
-      - name: Set up SSH
-        uses: appleboy/ssh-action@v0.1.5  # Usar la acción SSH para conectarse al servidor Windows
+      - name: Deploy to Windows Server using WinRM
+        uses: appleboy/winrm-action@v0.0.6  # Usamos la acción de WinRM para Windows
         with:
-          host: ${{ secrets.WINDOWS_SERVER_IP }}  # IP del servidor Windows, se toma desde los secretos
-          username: ${{ secrets.WINDOWS_SERVER_USER }}  # Nombre de usuario del servidor Windows
-          private-key: ${{ secrets.SSH_PRIVATE_KEY }}  # La clave privada SSH para autenticación
-
-      - name: Deploy API to Windows Server
-        run: |
-          ssh ${{ secrets.WINDOWS_SERVER_USER }}@${{ secrets.WINDOWS_SERVER_IP }} << EOF
-            cd C:/path/to/your/api  # Cambia la ruta a tu carpeta de la API
-            git pull origin main  # Hacer pull de los últimos cambios del repositorio
-            dotnet publish --configuration Release --output C:/path/to/your/api/out  # Publicar la aplicación
-            net stop "ApiServiceName"  # Detener el servicio si está en ejecución (opcional)
-            net start "ApiServiceName"  # Iniciar el servicio de nuevo
-          EOF
-
-      - name: Deploy MVC to Windows Server
-        run: |
-          ssh ${{ secrets.WINDOWS_SERVER_USER }}@${{ secrets.WINDOWS_SERVER_IP }} << EOF
-            cd C:/path/to/your/mvc  # Cambia la ruta a tu carpeta de la MVC
-            git pull origin main  # Hacer pull de los últimos cambios del repositorio
-            dotnet publish --configuration Release --output C:/path/to/your/mvc/out  # Publicar la aplicación
-            net stop "MvcServiceName"  # Detener el servicio si está en ejecución (opcional)
-            net start "MvcServiceName"  # Iniciar el servicio de nuevo
-          EOF
+          host: ${{ secrets.WINDOWS_SERVER_IP }}  # La IP de tu servidor Windows
+          username: ${{ secrets.WINDOWS_SERVER_USER }}  # El nombre de usuario de acceso SSH en Windows
+          password: ${{ secrets.WINDOWS_SERVER_PASSWORD }}  # La contraseña de tu usuario en el servidor
+          port: 5986  # El puerto predeterminado de WinRM sobre HTTPS (puedes cambiarlo si es necesario)
+          script: |
+            cd C:/path/to/your/app  # Cambia la ruta de tu aplicación
+            git pull origin main  # Hacer pull de la última versión desde GitHub
+            dotnet publish --configuration Release --output C:/path/to/your/app/out  # Publicar la app
+            net stop "YourAppServiceName"  # Detener el servicio de la app (si es necesario)
+            net start "YourAppServiceName"  # Iniciar el servicio de la app (si es necesario)
