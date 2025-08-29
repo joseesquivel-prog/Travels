@@ -32,3 +32,4 @@ F:\project\TravelApp.MVC\obj\Debug\net8.0\refint\TravelApp.MVC.dll
 F:\project\TravelApp.MVC\obj\Debug\net8.0\TravelApp.MVC.pdb
 F:\project\TravelApp.MVC\obj\Debug\net8.0\TravelApp.MVC.genruntimeconfig.cache
 F:\project\TravelApp.MVC\obj\Debug\net8.0\ref\TravelApp.MVC.dll
+F:\project\TravelApp.MVC\obj\Debug\net8.0\TravelApp.MVC.sourcelink.json

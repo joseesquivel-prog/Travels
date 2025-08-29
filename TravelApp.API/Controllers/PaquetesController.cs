@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Text;
 using Microsoft.EntityFrameworkCore;
 using TravelApp.API.Data;
 using TravelApp.API.Models;

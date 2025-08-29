@@ -568,6 +568,18 @@
           }
         }
       }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "TravelApp.API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {

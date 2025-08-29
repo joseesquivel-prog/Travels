@@ -7,7 +7,7 @@ builder.Services.AddControllersWithViews();
 
 // Register HttpClient and ApiService
 builder.Services.AddHttpClient<ApiService>();
-builder.Services.AddScoped<ApiService>();
+
 
 var app = builder.Build();
 

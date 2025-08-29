@@ -139,3 +139,6 @@ F:\project\TravelApp.API\obj\Debug\net8.0\refint\TravelApp.API.dll
 F:\project\TravelApp.API\obj\Debug\net8.0\TravelApp.API.pdb
 F:\project\TravelApp.API\obj\Debug\net8.0\TravelApp.API.genruntimeconfig.cache
 F:\project\TravelApp.API\obj\Debug\net8.0\ref\TravelApp.API.dll
+F:\project\TravelApp.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+F:\project\TravelApp.API\obj\Debug\net8.0\TravelApp.API.sourcelink.json
+F:\project\TravelApp.API\bin\Debug\net8.0\Newtonsoft.Json.dll

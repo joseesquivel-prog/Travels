@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mkdEnsyeMas5R29oGHppoKWyynlltah5/PDraeiSQbM=",
+  "Hash": "Rn5UMLnhXz4F3fe71JjwaxCVhlQwUdqPzwQtdLbzEMk=",
   "Source": "TravelApp.MVC",
   "BasePath": "_content/TravelApp.MVC",
   "Mode": "Default",
@@ -31,59 +31,35 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "912zh41goc",
-      "Integrity": "DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w=",
+      "Fingerprint": "re2e3fvsbb",
+      "Integrity": "s3L/TA5NmcsM7+wyVvMFNWo604oNHaRjBlieia1qgsc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "F:\\project\\TravelApp.MVC\\wwwroot\\js\\site.js",
+      "SourceId": "TravelApp.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\project\\TravelApp.MVC\\wwwroot\\",
+      "BasePath": "_content/TravelApp.MVC",
+      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g8qyxcy755",
+      "Integrity": "sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     }
   ],
   "Endpoints": [
-    {
-      "Route": "css/site.912zh41goc.css",
-      "AssetFile": "F:\\project\\TravelApp.MVC\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1701"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 23:22:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "912zh41goc"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w="
-        }
-      ]
-    },
     {
       "Route": "css/site.css",
       "AssetFile": "F:\\project\\TravelApp.MVC\\wwwroot\\css\\site.css",
@@ -95,7 +71,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1701"
+          "Value": "2014"
         },
         {
           "Name": "Content-Type",
@@ -103,11 +79,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w=\""
+          "Value": "\"s3L/TA5NmcsM7+wyVvMFNWo604oNHaRjBlieia1qgsc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 23:22:12 GMT"
+          "Value": "Thu, 28 Aug 2025 22:59:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117,7 +93,134 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DUYCVVP/ZwYxOL+t96vGbfYK6je7qCeJEsWTLgmo84w="
+          "Value": "sha256-s3L/TA5NmcsM7+wyVvMFNWo604oNHaRjBlieia1qgsc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.re2e3fvsbb.css",
+      "AssetFile": "F:\\project\\TravelApp.MVC\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s3L/TA5NmcsM7+wyVvMFNWo604oNHaRjBlieia1qgsc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 28 Aug 2025 22:59:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "re2e3fvsbb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s3L/TA5NmcsM7+wyVvMFNWo604oNHaRjBlieia1qgsc="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.g8qyxcy755.js",
+      "AssetFile": "F:\\project\\TravelApp.MVC\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 28 Aug 2025 23:14:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g8qyxcy755"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "F:\\project\\TravelApp.MVC\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 28 Aug 2025 23:14:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms="
         }
       ]
     }

@@ -1,16 +1,28 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/TravelApp.MVC/css/site.912zh41goc.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"912zh41goc"},{"Name":"integrity","Value":"sha256-DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w="},{"Name":"label","Value":"_content/TravelApp.MVC/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1701"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 23:22:12 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TravelApp.MVC/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1701"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DUYCVVP/ZwYxOL\u002Bt96vGbfYK6je7qCeJEsWTLgmo84w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 23:22:12 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-s3L/TA5NmcsM7\u002BwyVvMFNWo604oNHaRjBlieia1qgsc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2014"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022s3L/TA5NmcsM7\u002BwyVvMFNWo604oNHaRjBlieia1qgsc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 22:59:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TravelApp.MVC/css/site.re2e3fvsbb.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"re2e3fvsbb"},{"Name":"integrity","Value":"sha256-s3L/TA5NmcsM7\u002BwyVvMFNWo604oNHaRjBlieia1qgsc="},{"Name":"label","Value":"_content/TravelApp.MVC/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2014"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022s3L/TA5NmcsM7\u002BwyVvMFNWo604oNHaRjBlieia1qgsc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 22:59:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TravelApp.MVC/js/site.g8qyxcy755.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g8qyxcy755"},{"Name":"integrity","Value":"sha256-sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms="},{"Name":"label","Value":"_content/TravelApp.MVC/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"814"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 23:14:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TravelApp.MVC/js/site.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"814"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sPXMu5atU2y9geHeKDiyxvDY0Ui99P16fp5l0QxsKms=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Aug 2025 23:14:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>
