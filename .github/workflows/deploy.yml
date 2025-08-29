@@ -3,25 +3,25 @@ name: Deploy to Windows Server
 on:
   push:
     branches:
-      - main  # Se ejecuta al hacer push en la rama main
+      - main  # Se ejecuta cuando haces push en la rama main
 
 jobs:
   deploy:
-    runs-on: windows-latest  # Ejecutamos en un entorno Windows
+    runs-on: windows-latest  # Ejecutar en un entorno Windows
 
     steps:
       - name: Check out the code
         uses: actions/checkout@v2  # Este paso toma el código de tu repositorio
 
-      - name: Deploy to Windows Server using WinRM
-        uses: appleboy/winrm-action@v0.0.6  # Usamos la acción de WinRM para Windows
+      - name: Set up WinRM connection and deploy
+        uses: ms-hyperv/windows-remote-action@v1.0.0  # Usamos la acción de WinRM de Microsoft
         with:
           host: ${{ secrets.WINDOWS_SERVER_IP }}  # La IP de tu servidor Windows
-          username: ${{ secrets.WINDOWS_SERVER_USER }}  # El nombre de usuario de acceso SSH en Windows
-          password: ${{ secrets.WINDOWS_SERVER_PASSWORD }}  # La contraseña de tu usuario en el servidor
-          port: 5986  # El puerto predeterminado de WinRM sobre HTTPS (puedes cambiarlo si es necesario)
+          username: ${{ secrets.WINDOWS_SERVER_USER }}  # El nombre de usuario para acceder al servidor
+          password: ${{ secrets.WINDOWS_SERVER_PASSWORD }}  # La contraseña del usuario en el servidor
+          port: 5986  # El puerto predeterminado de WinRM sobre HTTPS
           script: |
-            cd C:/path/to/your/app  # Cambia la ruta de tu aplicación
+            cd C:/path/to/your/app  # Cambia esta ruta a la de tu aplicación
             git pull origin main  # Hacer pull de la última versión desde GitHub
             dotnet publish --configuration Release --output C:/path/to/your/app/out  # Publicar la app
             net stop "YourAppServiceName"  # Detener el servicio de la app (si es necesario)
